@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深圳市康帅达科技有限公司 - 研磨材料批发 | 包装材料批发 | 五金机电批发</title>
+    <meta name="description" content="深圳市康帅达科技有限公司成立于2003年，坐落于广东省深圳市宝安区石岩。公司主要经营各种五金机电、研磨材料、包装材料、电子产品的配件及批发销售。">
+    <meta name="keywords" content="康帅达,五金机电,研磨材料,包装材料,电子产品,深圳宝安,砂纸,砂带,抛光轮,冷风机,水泵">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+            color: #333;
+            background: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        a { text-decoration: none; color: inherit; transition: color 0.3s; }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+
+        /* ===== UTILITY ===== */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #e8303d, #ff6b6b);
+            border-radius: 2px;
+        }
+        .section-title p {
+            color: #777;
+            font-size: 1rem;
+            margin-top: 15px;
+        }
+
+        /* ===== TOP BAR ===== */
+        .top-bar {
+            background: #1a1a2e;
+            color: #ccc;
+            font-size: 0.85rem;
+            padding: 8px 0;
+        }
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .top-bar a { color: #ccc; margin-left: 15px; }
+        .top-bar a:hover { color: #fff; }
+        .top-bar-right { display: flex; align-items: center; gap: 5px; }
+        .top-bar-right i { margin-right: 3px; color: #e8303d; }
+
+        /* ===== HEADER / NAV ===== */
+        header {
+            background: #fff;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 75px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #e8303d, #ff6b6b);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 900;
+        }
+        .logo-text h1 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            line-height: 1.3;
+        }
+        .logo-text span {
+            font-size: 0.75rem;
+            color: #999;
+            letter-spacing: 1px;
+        }
+        nav ul {
+            display: flex;
+            gap: 5px;
+        }
+        nav ul li a {
+            padding: 8px 18px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #444;
+            border-radius: 6px;
+            transition: all 0.3s;
+            position: relative;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #e8303d;
+            background: rgba(232, 48, 61, 0.06);
+        }
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #1a1a2e;
+        }
+
+        /* ===== HERO BANNER ===== */
+        .hero {
+            position: relative;
+            height: 520px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        }
+        .hero-slides {
+            position: absolute;
+            inset: 0;
+        }
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-slide.active { opacity: 1; }
+        .hero-slide .hero-bg-pattern {
+            position: absolute;
+            inset: 0;
+            opacity: 0.08;
+            background-image:
+                radial-gradient(circle at 20% 50%, #fff 1px, transparent 1px),
+                radial-gradient(circle at 80% 20%, #fff 1px, transparent 1px),
+                radial-gradient(circle at 60% 80%, #fff 1px, transparent 1px);
+            background-size: 100px 100px, 150px 150px, 80px 80px;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        .hero-content .badge {
+            display: inline-block;
+            background: rgba(232, 48, 61, 0.9);
+            color: #fff;
+            padding: 6px 20px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .hero-content h2 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+        .hero-content p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        .hero-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 35px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #e8303d, #ff6b6b);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(232, 48, 61, 0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(232, 48, 61, 0.5);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: #fff;
+        }
+        .hero-dots {
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 5;
+        }
+        .hero-dots span {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .hero-dots span.active {
+            background: #e8303d;
+            transform: scale(1.2);
+        }
+        .hero-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+        }
+        .hero-arrow:hover { background: rgba(232, 48, 61, 0.7); }
+        .hero-arrow.prev { left: 20px; }
+        .hero-arrow.next { right: 20px; }
+
+        /* ===== STATS BAR ===== */
+        .stats-bar {
+            background: #fff;
+            margin-top: -50px;
+            position: relative;
+            z-index: 10;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            overflow: hidden;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 30px 15px;
+            border-right: 1px solid #f0f0f0;
+            transition: background 0.3s;
+        }
+        .stat-item:last-child { border-right: none; }
+        .stat-item:hover { background: #fafafa; }
+        .stat-item .num {
+            font-size: 2.2rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #e8303d, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .stat-item .label {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about-section {
+            padding: 100px 0 80px;
+            background: #fff;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .about-image {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+        }
+        .about-image .placeholder-img {
+            width: 100%;
+            height: 380px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 3rem;
+        }
+        .about-image .experience-badge {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #e8303d, #ff6b6b);
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(232, 48, 61, 0.4);
+        }
+        .experience-badge .years {
+            font-size: 2rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+        .experience-badge .text {
+            font-size: 0.8rem;
+            margin-top: 3px;
+        }
+        .about-text h3 {
+            font-size: 1.8rem;
+            color: #1a1a2e;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .about-text p {
+            color: #666;
+            line-height: 1.9;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        .about-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #444;
+        }
+        .about-feature-item i {
+            color: #e8303d;
+            font-size: 1rem;
+        }
+
+        /* ===== PRODUCTS SECTION ===== */
+        .products-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        .product-categories {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .category-btn {
+            padding: 10px 25px;
+            border: 2px solid #ddd;
+            border-radius: 30px;
+            background: #fff;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #666;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+        .category-btn:hover,
+        .category-btn.active {
+            border-color: #e8303d;
+            color: #e8303d;
+            background: rgba(232, 48, 61, 0.05);
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+        .product-card .card-img {
+            height: 200px;
+            background: #f5f7fa;
+            position: relative;
+            overflow: hidden;
+        }
+        .product-card .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s;
+        }
+        .product-card:hover .card-img img {
+            transform: scale(1.05);
+        }
+        .product-card .card-body {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-card .card-body h4 {
+            font-size: 0.95rem;
+            color: #333;
+            font-weight: 600;
+        }
+        .product-card .card-body .card-tag {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 3px 10px;
+            background: #fff3f3;
+            color: #e8303d;
+            font-size: 0.75rem;
+            border-radius: 20px;
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .service-card {
+            text-align: center;
+            padding: 40px 30px;
+            border-radius: 16px;
+            background: #fff;
+            border: 1px solid #f0f0f0;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #e8303d, #ff6b6b);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-card:hover {
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            transform: translateY(-5px);
+        }
+        .service-card .icon-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #fff5f5, #ffe8e8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+            color: #e8303d;
+            transition: all 0.3s;
+        }
+        .service-card:hover .icon-circle {
+            background: linear-gradient(135deg, #e8303d, #ff6b6b);
+            color: #fff;
+        }
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: #1a1a2e;
+            margin-bottom: 12px;
+        }
+        .service-card p {
+            color: #888;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        /* ===== NEWS SECTION ===== */
+        .news-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .news-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+            transition: all 0.3s;
+        }
+        .news-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+        }
+        .news-card .news-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px 25px;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+        }
+        .news-card .news-date {
+            text-align: center;
+            min-width: 50px;
+        }
+        .news-card .news-date .day {
+            font-size: 1.5rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+        .news-card .news-date .month {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+        .news-card .news-type {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+        .news-card .news-body {
+            padding: 25px;
+        }
+        .news-card .news-body h4 {
+            font-size: 1.1rem;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+        .news-card .news-body p {
+            color: #888;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        .contact-info-card {
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
+        .contact-info-card:hover {
+            background: #fff;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        .contact-info-card .ci-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #e8303d, #ff6b6b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .contact-info-card h4 {
+            font-size: 1rem;
+            color: #1a1a2e;
+            margin-bottom: 5px;
+        }
+        .contact-info-card p {
+            color: #888;
+            font-size: 0.9rem;
+        }
+        .contact-form {
+            background: #f8f9fa;
+            padding: 35px;
+            border-radius: 16px;
+        }
+        .contact-form h3 {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 18px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+            background: #fff;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #e8303d;
+        }
+        .form-group textarea { height: 120px; resize: vertical; }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #1a1a2e;
+            color: #ccc;
+            padding: 60px 0 0;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer-about h3 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        .footer-about p {
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: #999;
+        }
+        .footer-col h4 {
+            color: #fff;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: #e8303d;
+        }
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a {
+            color: #999;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        .footer-col ul li a:hover {
+            color: #e8303d;
+            padding-left: 5px;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .footer-bottom a { color: #888; }
+        .footer-bottom a:hover { color: #e8303d; }
+
+        /* ===== BACK TO TOP ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e8303d, #ff6b6b);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(232, 48, 61, 0.4);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 999;
+            border: none;
+        }
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .back-to-top:hover {
+            transform: translateY(-3px);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .products-grid { grid-template-columns: repeat(4, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .mobile-toggle { display: block; }
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                right: 0;
+                background: #fff;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+            nav ul.show { display: flex; }
+            .hero { height: 400px; }
+            .hero-content h2 { font-size: 1.8rem; }
+            .stats-bar { grid-template-columns: repeat(2, 1fr); margin-top: -30px; }
+            .about-grid { grid-template-columns: 1fr; gap: 30px; }
+            .products-grid { grid-template-columns: repeat(3, 1fr); }
+            .services-grid { grid-template-columns: 1fr; }
+            .news-grid { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) {
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero-content h2 { font-size: 1.4rem; }
+            .stats-bar { grid-template-columns: 1fr 1fr; }
+            .stat-item { padding: 20px 10px; }
+            .stat-item .num { font-size: 1.6rem; }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="container">
+        <div>欢迎来到深圳市康帅达科技有限公司官网！</div>
+        <div class="top-bar-right">
+            <span><i class="fas fa-clock"></i> 营业时间：周一至周六 8:30-18:30</span>
+            <a href="#"><i class="fas fa-globe"></i> English</a>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header id="header">
+    <div class="container">
+        <a href="#" class="logo">
+            <div class="logo-icon">KSD</div>
+            <div class="logo-text">
+                <h1>康帅达科技</h1>
+                <span>KANGSHUAI DA TECHNOLOGY</span>
+            </div>
+        </a>
+        <nav>
+            <div class="mobile-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="navMenu">
+                <li><a href="#home" class="active">网站首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#products">产品中心</a></li>
+                <li><a href="#services">新闻中心</a></li>
+                <li><a href="#news">解决方案</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Banner -->
+<section class="hero" id="home">
+    <div class="hero-slides">
+        <div class="hero-slide active">
+            <div class="hero-bg-pattern"></div>
+            <div class="hero-content">
+                <div class="badge">始于 2003 年</div>
+                <h2>深圳市康帅达科技有限公司</h2>
+                <p>专注五金机电、研磨材料、包装材料、电子产品批发<br>宝安区规模最大、品类最全的综合型企业</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary"><i class="fas fa-th-large"></i> 产品中心</a>
+                    <a href="#contact" class="btn btn-outline"><i class="fas fa-phone"></i> 联系我们</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide">
+            <div class="hero-bg-pattern"></div>
+            <div class="hero-content">
+                <div class="badge">研磨材料专家</div>
+                <h2>专业研磨材料 · 包装材料 · 五金机电</h2>
+                <p>砂纸 · 砂带 · 砂布 · 抛光轮 · 研磨轮 · 锯片 · 冷风机 · 水泵</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-file-alt"></i> 获取报价</a>
+                    <a href="#about" class="btn btn-outline"><i class="fas fa-info-circle"></i> 了解更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide">
+            <div class="hero-bg-pattern"></div>
+            <div class="hero-content">
+                <div class="badge">品质保证</div>
+                <h2>产品质量对客户负责 · 服务质量让客户满意</h2>
+                <p>十年深耕宝安，服务上千家企业客户，值得信赖的合作伙伴</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-handshake"></i> 合作咨询</a>
+                    <a href="#services" class="btn btn-outline"><i class="fas fa-cogs"></i> 服务项目</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="hero-arrow prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+    <button class="hero-arrow next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+    <div class="hero-dots">
+        <span class="active" onclick="goToSlide(0)"></span>
+        <span onclick="goToSlide(1)"></span>
+        <span onclick="goToSlide(2)"></span>
+    </div>
+</section>
+
+<!-- Stats Bar -->
+<div class="stats-bar fade-in">
+    <div class="stat-item">
+        <div class="num">20+</div>
+        <div class="label">年行业经验</div>
+    </div>
+    <div class="stat-item">
+        <div class="num">200+</div>
+        <div class="label">产品种类</div>
+    </div>
+    <div class="stat-item">
+        <div class="num">1000+</div>
+        <div class="label">服务企业客户</div>
+    </div>
+    <div class="stat-item">
+        <div class="num">4</div>
+        <div class="label">核心产品系列</div>
+    </div>
+</div>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="section-title fade-in">
+            <h2>关于我们</h2>
+            <p>About Us</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-image fade-in">
+                <div class="placeholder-img">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="experience-badge">
+                    <div class="years">20+</div>
+                    <div class="text">年行业深耕</div>
+                </div>
+            </div>
+            <div class="about-text fade-in">
+                <h3>宝安区规模领先的综合型科技企业</h3>
+                <p>深圳市康帅达科技有限公司成立于2003年，公司坐落于广东省深圳市宝安区石岩。</p>
+                <p>公司主要经营各种五金机电、研磨材料、包装材料、电子产品的配件及维修，是目前宝安区最大最齐全的集五金机电、研磨包装、电子产品批发于一体的综合型企业。</p>
+                <p>成立二十年来，我公司本着"产品质量对客户负责，服务质量让客户满意"的原则，深受广大客户的赞美及好评。</p>
+                <div class="about-features">
+                    <div class="about-feature-item">
+                        <i class="fas fa-check-circle"></i> 五金机电批发
+                    </div>
+                    <div class="about-feature-item">
+                        <i class="fas fa-check-circle"></i> 研磨材料供应
+                    </div>
+                    <div class="about-feature-item">
+                        <i class="fas fa-check-circle"></i> 包装材料批发
+                    </div>
+                    <div class="about-feature-item">
+                        <i class="fas fa-check-circle"></i> 电子产品配件
+                    </div>
+                    <div class="about-feature-item">
+                        <i class="fas fa-check-circle"></i> 设备维修保养
+                    </div>
+                    <div class="about-feature-item">
+                        <i class="fas fa-check-circle"></i> 技术方案支持
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="products-section" id="products">
+    <div class="container">
+        <div class="section-title fade-in">
+            <h2>产品中心</h2>
+            <p>Product Center — 四大产品系列，品类齐全</p>
+        </div>
+        <div class="product-categories fade-in">
+            <button class="category-btn active" onclick="filterProducts('all', this)">全部产品</button>
+            <button class="category-btn" onclick="filterProducts('hardware', this)">五金机电系列</button>
+            <button class="category-btn" onclick="filterProducts('grinding', this)">研磨材料系列</button>
+            <button class="category-btn" onclick="filterProducts('packaging', this)">包装材料系列</button>
+            <button class="category-btn" onclick="filterProducts('electronics', this)">电子产品系列</button>
+        </div>
+        <div class="products-grid fade-in" id="productsGrid">
+            <!-- 五金机电系列 -->
+            <div class="product-card" data-category="hardware">
+                <div class="card-img"><img src="images/products/product_01_水冷扇.png" alt="水冷扇"></div>
+                <div class="card-body">
+                    <h4>水冷扇</h4>
+                    <span class="card-tag">五金机电</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="hardware">
+                <div class="card-img"><img src="images/products/product_02_生活泵.png" alt="生活泵"></div>
+                <div class="card-body">
+                    <h4>生活泵</h4>
+                    <span class="card-tag">五金机电</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="hardware">
+                <div class="card-img"><img src="images/products/product_03_清水泵.png" alt="清水泵"></div>
+                <div class="card-body">
+                    <h4>清水泵</h4>
+                    <span class="card-tag">五金机电</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="hardware">
+                <div class="card-img"><img src="images/products/product_04_牛角扇.png" alt="牛角扇"></div>
+                <div class="card-body">
+                    <h4>牛角扇</h4>
+                    <span class="card-tag">五金机电</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="hardware">
+                <div class="card-img"><img src="images/products/product_05_冷风机.png" alt="冷风机"></div>
+                <div class="card-body">
+                    <h4>冷风机</h4>
+                    <span class="card-tag">五金机电</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="hardware">
+                <div class="card-img"><img src="images/products/product_06_飞力排污泵.png" alt="飞力排污泵"></div>
+                <div class="card-body">
+                    <h4>飞力排污泵</h4>
+                    <span class="card-tag">五金机电</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="hardware">
+                <div class="card-img"><img src="images/products/product_07_南方排污泵.png" alt="南方排污泵"></div>
+                <div class="card-body">
+                    <h4>南方排污泵</h4>
+                    <span class="card-tag">五金机电</span>
+                </div>
+            </div>
+            <!-- 研磨材料系列 -->
+            <div class="product-card" data-category="grinding">
+                <div class="card-img"><img src="images/products/product_08_拉绒片.png" alt="拉绒片 (2)"></div>
+                <div class="card-body">
+                    <h4>拉绒片 (2)</h4>
+                    <span class="card-tag">研磨材料</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="grinding">
+                <div class="card-img"><img src="images/products/product_09_研磨轮.png" alt="研磨轮"></div>
+                <div class="card-body">
+                    <h4>研磨轮</h4>
+                    <span class="card-tag">研磨材料</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="grinding">
+                <div class="card-img"><img src="images/products/product_10_砂纸.png" alt="砂纸"></div>
+                <div class="card-body">
+                    <h4>砂纸</h4>
+                    <span class="card-tag">研磨材料</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="grinding">
+                <div class="card-img"><img src="images/products/product_11_砂带.png" alt="砂带"></div>
+                <div class="card-body">
+                    <h4>砂带</h4>
+                    <span class="card-tag">研磨材料</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="grinding">
+                <div class="card-img"><img src="images/products/product_12_砂布.png" alt="砂布"></div>
+                <div class="card-body">
+                    <h4>砂布</h4>
+                    <span class="card-tag">研磨材料</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="grinding">
+                <div class="card-img"><img src="images/products/product_13_平面砂布轮.png" alt="平面砂布轮"></div>
+                <div class="card-body">
+                    <h4>平面砂布轮</h4>
+                    <span class="card-tag">研磨材料</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="grinding">
+                <div class="card-img"><img src="images/products/product_14_平面砂布轮2.png" alt="平面砂布轮2"></div>
+                <div class="card-body">
+                    <h4>抛光轮</h4>
+                    <span class="card-tag">研磨材料</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="grinding">
+                <div class="card-img"><img src="images/products/product_15_平面砂布轮3.png" alt="平面砂布轮3"></div>
+                <div class="card-body">
+                    <h4>抛光蜡</h4>
+                    <span class="card-tag">研磨材料</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="grinding">
+                <div class="card-img"><img src="images/products/product_16_抛光轮.png" alt="抛光轮"></div>
+                <div class="card-body">
+                    <h4>尼龙轮</h4>
+                    <span class="card-tag">研磨材料</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="grinding">
+                <div class="card-img"><img src="images/products/product_17_抛光蜡.png" alt="抛光蜡"></div>
+                <div class="card-body">
+                    <h4>拉绒片</h4>
+                    <span class="card-tag">研磨材料</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="grinding">
+                <div class="card-img"><img src="images/products/product_18_尼龙轮.png" alt="尼龙轮"></div>
+                <div class="card-body">
+                    <h4>锯片</h4>
+                    <span class="card-tag">研磨材料</span>
+                </div>
+            </div>
+            <div class="product-card" data-category="grinding">
+                <div class="card-img"><img src="images/products/product_19_拉绒片.png" alt="拉绒片"></div>
+                <div class="card-body">
+                    <h4>拉绒片</h4>
+                    <span class="card-tag">研磨材料</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section" id="services">
+    <div class="container">
+        <div class="section-title fade-in">
+            <h2>我们的优势</h2>
+            <p>Why Choose Us — 二十年深耕，品质与服务并重</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="icon-circle">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>品质保证</h3>
+                <p>所有产品严格筛选，确保质量可靠。我们坚持"产品质量对客户负责"的原则，每一件商品都经过严格质检。</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="icon-circle">
+                    <i class="fas fa-boxes"></i>
+                </div>
+                <h3>品类齐全</h3>
+                <p>涵盖五金机电、研磨材料、包装材料、电子产品四大系列，是宝安区规模最大、最齐全的综合性批发企业。</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="icon-circle">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>专业服务</h3>
+                <p>提供产品选型指导、技术方案支持、设备维修保养等一站式服务，"服务质量让客户满意"是我们的承诺。</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="icon-circle">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3>快速配送</h3>
+                <p>完善的仓储物流体系，深圳本地及周边地区快速送达，确保您的生产不间断。</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="icon-circle">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <h3>价格优势</h3>
+                <p>源头厂家直供，减少中间环节，为您提供最具竞争力的批发价格。</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="icon-circle">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>信誉保障</h3>
+                <p>成立二十年来，服务上千家企业客户，良好的口碑和信誉是我们最大的财富。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- News Section -->
+<section class="news-section" id="news">
+    <div class="container">
+        <div class="section-title fade-in">
+            <h2>新闻动态</h2>
+            <p>News & Events — 行业动态与公司新闻</p>
+        </div>
+        <div class="news-grid">
+            <div class="news-card fade-in">
+                <div class="news-header">
+                    <div class="news-date">
+                        <div class="day">15</div>
+                        <div class="month">2024.06</div>
+                    </div>
+                    <div class="news-type">行业动态</div>
+                </div>
+                <div class="news-body">
+                    <h4>研磨材料在工业生产中的重要应用</h4>
+                    <p>研磨材料是现代工业生产中不可或缺的重要耗材，广泛应用于金属加工、表面处理、精密制造等领域...</p>
+                </div>
+            </div>
+            <div class="news-card fade-in">
+                <div class="news-header">
+                    <div class="news-date">
+                        <div class="day">08</div>
+                        <div class="month">2024.06</div>
+                    </div>
+                    <div class="news-type">公司新闻</div>
+                </div>
+                <div class="news-body">
+                    <h4>康帅达科技二十年发展历程回顾</h4>
+                    <p>自2003年成立以来，康帅达科技从一家小型批发商发展成为宝安区最具影响力的综合型企业...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="section-title fade-in">
+            <h2>联系我们</h2>
+            <p>Contact Us — 期待与您的合作</p>
+        </div>
+        <div class="contact-grid">
+            <div class="fade-in">
+                <div class="contact-info-card">
+                    <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h4>公司地址</h4>
+                        <p>广东省深圳市宝安区石岩</p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <h4>联系电话</h4>
+                        <p>请咨询客服获取最新联系方式</p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h4>电子邮箱</h4>
+                        <p>请咨询客服获取最新邮箱地址</p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <div class="ci-icon"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <h4>营业时间</h4>
+                        <p>周一至周六 8:30 - 18:30</p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <div class="ci-icon"><i class="fas fa-id-card"></i></div>
+                    <div>
+                        <h4>网站备案</h4>
+                        <p>粤ICP备13079333号</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form fade-in">
+                <h3><i class="fas fa-paper-plane" style="color:#e8303d;margin-right:10px;"></i>在线留言</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" placeholder="您的姓名">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="联系电话">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="电子邮箱">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="咨询主题">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="请输入您要咨询的内容..."></textarea>
+                </div>
+                <button class="btn btn-primary" style="width:100%;justify-content:center;">
+                    <i class="fas fa-paper-plane"></i> 提交留言
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3>深圳市康帅达科技有限公司</h3>
+                <p>成立于2003年，坐落于广东省深圳市宝安区石岩。公司主要经营各种五金机电、研磨材料、包装材料、电子产品的配件及维修，是目前宝安区最大最齐全的集五金机电、研磨包装、电子产品批发于一体的综合型企业。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#home">网站首页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#products">产品中心</a></li>
+                    <li><a href="#services">新闻中心</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>产品系列</h4>
+                <ul>
+                    <li><a href="#products">五金机电系列</a></li>
+                    <li><a href="#products">研磨材料系列</a></li>
+                    <li><a href="#products">包装材料系列</a></li>
+                    <li><a href="#products">电子产品系列</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系我们</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-map-marker-alt" style="width:16px;margin-right:5px;"></i> 深圳市宝安区石岩</a></li>
+                    <li><a href="#">粤ICP备13079333号</a></li>
+                    <li><a href="#">Copyright &copy; 2006-2026</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Copyright &copy; 2006-2026 深圳市康帅达科技有限公司 &nbsp;|&nbsp;
+            <a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备13079333号</a> &nbsp;|&nbsp;
+            All rights reserved
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<script>
+// ===== Hero Slider =====
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slide');
+const dots = document.querySelectorAll('.hero-dots span');
+
+function goToSlide(index) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    currentSlide = (index + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+}
+
+function changeSlide(direction) {
+    goToSlide(currentSlide + direction);
+}
+
+// Auto-play
+let autoPlay = setInterval(() => changeSlide(1), 5000);
+document.querySelector('.hero').addEventListener('mouseenter', () => clearInterval(autoPlay));
+document.querySelector('.hero').addEventListener('mouseleave', () => {
+    autoPlay = setInterval(() => changeSlide(1), 5000);
+});
+
+// ===== Mobile Menu =====
+function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+}
+
+// Close mobile menu on link click
+document.querySelectorAll('#navMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('navMenu').classList.remove('show');
+    });
+});
+
+// ===== Product Filter =====
+function filterProducts(category, btn) {
+    // Update active button
+    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Filter cards
+    document.querySelectorAll('.product-card').forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+            card.style.display = 'block';
+            card.style.animation = 'fadeInUp 0.4s ease';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+// ===== Scroll Animations =====
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// ===== Back to Top =====
+window.addEventListener('scroll', () => {
+    const btn = document.getElementById('backToTop');
+    if (window.scrollY > 300) {
+        btn.classList.add('show');
+    } else {
+        btn.classList.remove('show');
+    }
+});
+
+// ===== Active Nav Link =====
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const scrollPos = window.scrollY + 100;
+
+    sections.forEach(section => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute('id');
+        const link = document.querySelector(`nav a[href="#${id}"]`);
+        if (link) {
+            if (scrollPos >= top && scrollPos < top + height) {
+                document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+                link.classList.add('active');
+            }
+        }
+    });
+});
+
+// ===== Header Shadow on Scroll =====
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    if (window.scrollY > 10) {
+        header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+    } else {
+        header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
+    }
+});
+</script>
+
+</body>
+</html>
